@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopSmart Product Reviews</title>
+    <link rel="stylesheet" href="../../css/UnregUser/qa.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="menu_icon_box">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+</div>
+
+
+<header class="bg-primary py-4">
+    <div class="container mx-auto flex justify-between items-center">
+        <div class="flex items-center space-x-4">
+            <input type="text" id="searchInputOfSearch" placeholder="Search..." class="px-4 py-2 rounded bg-secondary text-black">
+            <button id="searchButtonOfSearch"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+            </svg></button>
+        </div>
+        <a href="/html/UnregUser/homePage.html" class="image-link">
+            <img  src="/photos/shopsmartwhite.png" alt="Beyaz logo" width="160" height="50">
+        </a>
+
+        <div class="flex items-center space-x-4 flex-lg-grow-1 "> <!-- Username or Sign in/Register -->
+
+            <a href="/html/UnregUser/forum.html">Forum</a>
+
+            <a id="wishListIdOfOfTemp" href="/html/User/wishlist.html">Wishlist</a>
+
+                <div id="user-section" class="uname">
+                    <!-- Username or Sign in/Register -->
+                </div>
+
+        </div>
+    </div>
+</header>
+
+<div class="sidebar" id="sidebar">
+    <nav>
+        <ul id="categoriesOfSystem">
+        </ul>
+    </nav>
+</div>
+
+<main>
+    <section class="product-summary">
+        <div class="product-image-container">
+            <img id="productDetailsProductImage" src="" alt="Product Image">
+        </div>
+        <div class="product-info">
+            <h1 id="productNameOfReviews">Product Name</h1>
+            <p class="price" id="productPriceOfReviews"></p>
+            <p id="productDescriptionOfReviews">Product Description</p>
+            <div class="product-rating">
+                <img src="/stars/star.png" alt="Rating" class="rating-star">
+                <span id="productRatingOfReviews"></span>
+            </div>
+            <div class="reviews-num">
+                <span id="productReviewsNumOfReviews"></span>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews-section">
+        <h1>Questions</h1>
+        <div id="reviews-list" class="reviews-list">
+            <!-- Reviews will be loaded here -->
+        </div>
+        <div class="pagination" id="pagination">
+            <!-- Pagination buttons will be dynamically added here -->
+        </div>
+    </section>
+
+    <section class="reviewForm">
+        <div class="reviewForm" id="reviewForm">
+            <button class="add-review-button" id="add-review-button">+ Add Question</button>
+            <form class="hidden">
+                <label for="review">Your Question:</label>
+                <div class="input-container">
+                    <textarea id="review" name="review" rows="4"></textarea>
+                    <div class="button-container">
+                        <button type="submit" class="submit-button">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+</main>
+
+<!-- Add the modal form here -->
+<div id="addResponseForm" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <form id="responseForm">
+            <label for="responseText">Response:</label>
+            <textarea id="responseText" name="responseText" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-primary text-white py-4 mt-8">
+    <div class="container mx-auto flex justify-between">
+        <div>
+            <a href="/html/UnregUser/aboutUs.html" class="block">About us</a>
+        </div>
+        <div>
+            <a href="/html/UnregUser/forum.html" class="block">Forum</a>
+        </div>
+
+    </div>
+</footer>
+
+<script src="../../js/UnregUser/qa.js"></script>
+</body>
+</html>

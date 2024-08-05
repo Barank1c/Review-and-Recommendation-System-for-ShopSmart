@@ -1,0 +1,122 @@
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.main-content {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+input[type="file"] {
+    margin-bottom: 10px;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+button,
+.button-link {
+    background-color: #5D3FD3;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+button:hover,
+.button-link:hover {
+    background-color: #4c32a8;
+}
+
+.button-link {
+    border-radius: 4px;
+}
+
+.form-group.action-buttons {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.returnbut a {
+    color: white;
+    text-decoration: none;
+}
+
+.returnbut:hover, button:hover {
+    background-color: darkmagenta;
+}
+
+.returnbut {
+    position: relative;
+    z-index: 1;
+}
+
+a {
+    text-decoration: none;
+    color: #5D3FD3;
+}
+
+
+.product-checkbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.product-checkbox img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product-checkbox span {
+    font-weight: bold;
+    text-align: center;
+}
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 16px;
+}
+
+.product-list-container {
+    max-height: 500px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+

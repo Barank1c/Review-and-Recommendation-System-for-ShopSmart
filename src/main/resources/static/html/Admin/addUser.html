@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add User</title>
+    <link rel="stylesheet" href="/css/Admin/addUser.css">
+</head>
+<body>
+
+<header class="header">
+    <img src="/photos/SS%20RRSS-Photoroom.png-Photoroom.png" alt="logo" width="160" height="50">
+
+</header>
+<main class="main-content">
+    <h1>Add User</h1>
+    <form id="addUserForm">
+        <div class="form-group">
+            <label for="name">Name Surname:</label>
+            <input type="text" id="name" name="name">
+        </div>
+
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <textarea id="username" name="username"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <textarea id="email" name="email"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="hashedPassword">Password:</label>
+            <textarea id="hashedPassword" name="hashedPassword"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="phoneNumber">Phone Number (+90xxxxxxxxxx):</label>
+            <textarea id="phoneNumber" name="phoneNumber"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="dateOfBirth">Birth Date (YYYY-MM-DD):</label>
+            <textarea id="dateOfBirth" name="dateOfBirth"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="theme">Theme (dark/light):</label>
+            <select id="theme" name="theme">
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+            </select>
+        </div>
+
+        <label for="role">Role:</label>
+        <select id="role" name="role">
+            <option value="USER">User</option>
+            <option value="ADMIN">Admin</option>
+            <option value="MERCHANT">Merchant</option>
+            <option value="COMMUNITY_MODERATOR">Community Moderator</option>
+        </select>
+
+
+        <div class="form-group">
+            <label for="notificationEnabled">Notifications Enabled?:</label>
+            <select id="notificationEnabled" name="notificationEnabled">
+                <option value="false">No</option>
+                <option value="true">Yes</option>
+            </select>
+        </div>
+
+
+
+
+        <div class="form-group action-buttons" style="display: flex; justify-content: space-between;">
+            <button type="submit">Add User</button>
+            <button type="button" class="returnbut">
+                <a href="manageUsers.html">Go to Users Page</a>
+            </button>
+        </div>
+    </form>
+
+</main>
+<script src="/js/Admin/addUser.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+/* forumTopic.css */
+
+:root {
+    --primary-color: #4A148C; /* Dark purple */
+    --secondary-color: #EDE7F6; /* Light purple */
+    --accent-color: #D32F2F; /* Red */
+    --text-color: #212121; /* Dark grey */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.btn-edit{
+    background-color: var(--primary-color);
+}
+
+.bg-secondary {
+    background-color: var(--secondary-color);
+}
+
+.text-primary {
+    color: var(--primary-color);
+}
+
+.text-secondary {
+    color: var(--secondary-color);
+}
+
+.text-accent {
+    color: var(--accent-color);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+header img {
+    width: 150px;
+}
+
+.text-default {
+    color: var(--text-color);
+}
+
+.forum-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    flex: 1;
+    margin-left: 20px;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+}
+
+.pagination button {
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 5px;
+}
+
+.pagination button.active {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.pagination button:hover {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+}
+
+.comment-card {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.comment-card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.hidden {
+    display: none;
+}

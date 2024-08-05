@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopSmart - Forum</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/UnregUser/forum.css">
+</head>
+<body class="bg-gray-150">
+<!-- Header -->
+<header class="header">
+    <img src="/photos/SS%20RRSS-Photoroom.png-Photoroom.png" alt="logo" class="logo">
+    <h1 class="forum-title">Forum</h1>
+    <a href="/html/UnregUser/homePage.html">
+        <button id="home-btn" class="bg-primary py-2 px-4 rounded">Home</button>
+    </a>
+</header>
+
+<!-- Main Content -->
+<main class="main-content mt-8">
+    <div class="container mx-auto px-4">
+        <div class="flex justify-between">
+            <div class="topics-section w-2/3 mr-4">
+                <h2 class="text-2xl font-semibold mb-4">Topics</h2>
+                <div id="topics-list" class="space-y-4">
+                    <!-- Topic list -->
+                </div>
+                <div class="flex justify-center mt-4 pagination" id="topics-pagination">
+                    <!-- Pagination Controls for Topics -->
+                </div>
+                <button id="create-topic-btn" class="bg-primary text-white py-2 px-4 rounded mt-4 btn-createtopic">Create new topic +</button>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Edit Topic/Blog Box -->
+<!-- Edit Topic/Blog Box -->
+<div id="edit-topic-blog-box" class="hidden fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-50">
+    <div class="bg-white p-4 rounded shadow-md">
+        <h3 class="text-lg font-semibold mb-2">Edit Item</h3>
+        <input type="text" id="edit-topic-title" class="w-full p-2 border rounded mb-2" placeholder="Title">
+        <textarea id="edit-topic-blog-textarea" class="w-full p-2 border rounded mb-2" placeholder="Content"></textarea>
+        <div class="flex justify-end gap-2">
+            <button id="cancel-edit-topic-blog-btn" class="bg-gray-500 text-white py-1 px-3 rounded">Cancel</button>
+            <button id="save-edit-topic-blog-btn" class="bg-primary text-white py-1 px-3 rounded">Save</button>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- Create New Topic Box -->
+<div id="create-topic-box" class="hidden fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-50">
+    <div class="bg-white p-4 rounded shadow-md">
+        <h3 class="text-lg font-semibold mb-2">Create New Topic</h3>
+        <input type="text" id="new-topic-title" class="w-full p-2 border rounded mb-2" placeholder="Title">
+        <textarea id="new-topic-content" class="w-full p-2 border rounded mb-2" placeholder="Content"></textarea>
+        <div class="flex justify-end gap-2">
+            <button id="cancel-create-topic-btn" class="bg-gray-500 text-white py-1 px-3 rounded">Cancel</button>
+            <button id="save-create-topic-btn" class="bg-primary text-white py-1 px-3 rounded">Save</button>
+        </div>
+    </div>
+</div>
+
+
+<script src="/js/UnregUser/forum.js"></script>
+</body>
+</html>

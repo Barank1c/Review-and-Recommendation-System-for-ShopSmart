@@ -1,0 +1,233 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.righteous-regular {
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.table {
+    border-spacing: 15px 0;
+}
+
+.table th, .table td {
+    padding: 8px 20px;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid transparent;
+    border-radius: 0;
+}
+
+.text-muted {
+    color: #000000 !important;
+}
+
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    cursor: pointer;
+}
+
+.btn-add-user {
+    position: relative;
+    background-color: #331832;
+    color: white;
+    padding: 13px 30px;
+    border: 2px solid #685967;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-add-user:hover {
+    background-color: #6A5ACD;
+}
+
+.controls-container {
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.page-button {
+    padding: 8px 16px;
+    margin: 0 4px;
+    background-color: #331832;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.page-button.active {
+    background-color: #331832;
+    color: #fff;
+}
+
+.righteous-regular {
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+:root {
+    --primary-color: #331832;
+    --secondary-color: #EDE7F6;
+    --accent-color: #D2C3BE;
+    --text-color: #212121;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+
+}
+
+.bg-primary {
+    background-color: var(--primary-color);
+    color:var(--accent-color);
+}
+
+.bg-secondary {
+    background-color: var(--secondary-color);
+}
+.uname{
+    font-family: Righteous,cursive;
+    /*user icon eklenicek */
+}
+.text-primary {
+    color: var(--primary-color);
+}
+
+.text-secondary {
+    color: var(--secondary-color);
+}
+
+.text-accent {
+    color: var(--accent-color);
+}
+
+.text-default {
+    color: var(--text-color);
+}
+
+.header,
+.footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.header a,
+.footer a {
+    color: var(--secondary-color);
+}
+
+.header a:hover,
+.footer a:hover {
+    color: var(--accent-color);
+}
+
+.bi-box-arrow-right{
+    color: var(--secondary-color);
+}
+
+
+
+
+.sidebar {
+    width: 13%;
+    height: 100vh;
+    background-color: #685967;
+    float: left;
+    position: relative;
+    text-align: left;
+    z-index: 1;
+    opacity: 0;
+    left: -500px;
+    pointer-events: none;
+    transition: 0.3s;
+    font-family: "Poppins", sans-serif;
+}
+.active_sidebar{
+    opacity: 1;
+    left: 0;
+    pointer-events: fill;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 50px;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    background-color: #6A5ACD;
+}
+
+.menu_icon_box{
+    z-index: 3;
+    width: fit-content;
+    height: auto;
+    margin: 8px;
+    position: absolute;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.line1 , .line2 , .line3{
+    width: 40px;
+    height: 4px;
+    margin: 10px 10px;
+    background-color: #fff;
+    border-radius: 50px;
+    transition: 0.2s;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+

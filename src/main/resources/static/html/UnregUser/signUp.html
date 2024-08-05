@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopSmart Sign Up</title>
+    <link rel="stylesheet" href="/css/UnregUser/signUp.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><!-- inserting google righteous font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div class="container">
+    <div class="logo">
+        <img src="/photos/SS%20RRSS-Photoroom.png-Photoroom.png" alt="ShopSmart Logo" width="160" height="50">
+    </div>
+    <div class="signup-box">
+        <h3>Sign Up</h3>
+        <form id="registrationForm">
+            <div class="input-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="input-group">
+                <label for="phoneNumber">Phone Number</label>
+                <input type="text" id="phoneNumber" name="phoneNumber" required>
+            </div>
+            <div class="input-group">
+                <label for="gender">Gender</label>
+                <input type="text" id="gender" name="gender" required>
+
+            </div>
+            <div class="input-group">
+                <label for="dateOfBirth">Date of Birth</label>
+                <input type="text" id="dateOfBirth" name="dateOfBirth" required>
+            </div>
+            <div class="signup-button">
+                <button type="submit">Register</button>
+            </div>
+        </form>
+    </div>
+    <div class="home-button">
+        <button onclick="window.location.href='/html/UnregUser/homePage.html'">Home</button>
+    </div>
+</div>
+
+<script>
+    document.getElementById("registrationForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const registerRequest = {
+            name: document.getElementById("name").value,
+            email: document.getElementById("email").value,
+            phoneNumber: document.getElementById("phoneNumber").value,
+            username: document.getElementById("username").value,
+            hashedPassword: document.getElementById("password").value,
+            gender: document.getElementById("gender").value,
+            dateOfBirth: document.getElementById("dateOfBirth").value
+        };
+
+        fetch("/api/auth/register", {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(registerRequest)
+        })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                window.location.href = "/html/UnregUser/login.html";
+
+            })
+            .catch(error => console.error('Error', error));
+    });
+</script>
+</body>
+</html>

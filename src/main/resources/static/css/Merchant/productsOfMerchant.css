@@ -1,0 +1,351 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+}
+.righteous-regular {
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.page-button{
+    margin-left: 0px !important;
+}
+
+.top-bar {
+    background-color: #331832;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.top-bar .user-profile{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 4px;
+    max-width: 250px;
+    color: #D2C3BE;
+    font-family: Righteous,cursive;
+}
+.bi-person{
+    margin-right: 4px;
+}
+
+#productsContainer {
+    margin-bottom: 1rem;
+    margin-left: 1px;
+}
+
+.nav-button button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.5rem 0.75rem;
+    margin: 0 0.25rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+.nav-button button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+
+}
+
+.nav-button button.active {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+.nav-button button.active:hover {
+    background-color: #ffc107;
+    box-shadow: none;
+    transform: none;
+}
+
+.pagination {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.pagination button {
+    margin-right: 2px;
+    text-align: center;
+}
+.pagination button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.header {
+    border-bottom: 2px solid #4B0082;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    color: #4B0082;
+    margin: 0;
+    font-size: 28px;
+}
+
+.sidebar {
+    position: fixed;
+    background-color: #685967;
+    color: white;
+    padding-top: 20px;
+    height: 100vh;
+    width: 250px;
+
+}
+
+.sidebar-item {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    text-decoration: none;
+    color: inherit;
+    font-family: Poppins, sans-serif;
+}
+
+
+.sidebar-item.active {
+    background-color: #8f7d8e;
+    border-radius: 5px;
+    border-left: 5px solid white;
+
+}
+
+.logout{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    border-radius: 4px;
+    max-width: 250px;
+    color: #D2C3BE;
+    font-family: 'Righteous', cursive;
+    position: fixed;
+    bottom: 10px;
+    left: 70px;
+}
+.bi-box-arrow-right{
+    margin-right: 4px;
+}
+
+
+
+.main-content {
+    float: left;
+    width: 83.333%;
+    height: 100vh;
+    padding: 20px;
+}
+
+
+.card {
+    max-width: 400px ;
+    max-height: 500px;
+    position: relative;
+    border: none;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out;
+    margin-right: 5px;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-img-top {
+    width: 100%;
+    max-height: 200px;
+    min-height: 200px;
+    object-fit: contain;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin-bottom: 15px;
+}
+.card-title {
+    margin: 5px 0;
+    font-size: 1.25rem;
+}
+
+.card-text {
+    font-size: 0.875rem;
+    color: #666;
+}
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.card .btn-remove {
+    position: absolute;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border: 1px solid red;
+    background-color: transparent;
+    color: red;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.card .btn-remove .bi-trash {
+    margin-right: 5px;
+}
+
+.card .btn-remove:hover {
+    background-color: #d13241;
+    color: #ffffff;
+}
+.card .btn-group {
+    display: flex;
+    gap: 10px;
+    justify-content: start;
+    margin-top: 5px;
+}
+.product-card {
+    flex: 1 1 300px;
+    box-sizing: border-box;
+}
+
+.card .btn-edit {
+    position: absolute;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border: 1px solid dodgerblue;
+    background-color: transparent;
+    color: dodgerblue;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-edit .bi-pencil-square {
+    margin-right: 0.5rem;
+}
+.btn-edit,
+.btn-remove {
+    width: 90px;
+
+}
+.header1{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 4px;
+    max-width: 500px;
+    color: #212529;
+    font-family: Poppins, sans-serif;
+}
+
+.card .btn-edit:hover {
+    background-color: dodgerblue;
+    color: #ffffff;
+}
+.card-img-top{
+    width: 100%;
+    height: auto
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .top-bar {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        flex-direction: row;
+        overflow-x: auto;
+    }
+
+    .sidebar-item {
+        display: inline-block;
+    }
+    .product-card {
+        width: 100%;
+    }
+
+    .container {
+        padding: 20px;
+    }
+    .product {
+        flex-direction: column;
+        align-items: center;
+    }
+    .product img {
+        width: 100%;
+        max-width: 400px;
+    }
+    .product-info {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+}
+@media (max-width: 480px) {
+    .top-bar img {
+        width: 120px;
+    }
+
+    .sidebar {
+        flex-direction: column;
+    }
+    .btn-add-new {
+        width: 100%;
+    }
+    .container {
+        padding: 10px;
+    }
+    .product {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .product img {
+        width: 100%;
+        max-width: 300px;
+    }
+    .product-info {
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .product-card {
+        flex: 1 1 45%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .product-card {
+        flex: 1 1 100%;
+    }
+
+}

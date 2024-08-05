@@ -1,0 +1,92 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.main-content {
+    width: 60%;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+
+.action-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+button,
+.button-link {
+    background-color: #5D3FD3;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+
+button:hover,
+.button-link:hover {
+    background-color: #4c32a8;
+}
+
+
+.button-link {
+    border-radius: 4px;
+}
+
+.form-group.action-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.returnbut a {
+    color: white;
+    text-decoration: none;
+}
+
+.returnbut:hover, button:hover {
+    background-color: darkmagenta;
+}
+
+
+.returnbut {
+    position: relative;
+    z-index: 1;
+}
+
+a {
+    text-decoration: none;
+    color: #5D3FD3;
+}

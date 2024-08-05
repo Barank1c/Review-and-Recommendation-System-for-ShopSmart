@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopSmart Product Page</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/UnregUser/productDetails.css">
+</head>
+<body>
+
+<div class="menu_icon_box">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+</div>
+
+
+<header class="bg-primary py-4">
+    <div class="container mx-auto flex justify-between items-center">
+        <div class="flex items-center space-x-4">
+            <input type="text" id="searchInputOfSearch" placeholder="Search..." class="px-4 py-2 rounded bg-secondary text-black">
+            <button id="searchButtonOfSearch"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+            </svg></button>
+        </div>
+        <a href="/html/UnregUser/homePage.html" class="image-link">
+            <img  src="/photos/shopsmartwhite.png" alt="Beyaz logo" width="160" height="50">
+        </a>
+
+        <div class="flex items-center space-x-4 flex-lg-grow-1 "> <!-- Username or Sign in/Register -->
+
+            <a href="/html/UnregUser/forum.html">Forum</a>
+
+            <a id="wishListIdOfOfTemp" href="/html/User/wishlist.html">Wishlist</a>
+
+                <div id="user-section" class="uname">
+                    <!-- Username or Sign in/Register -->
+                </div>
+
+        </div>
+    </div>
+</header>
+
+<div class="sidebar" id="sidebar">
+    <nav>
+        <ul id="categoriesOfSystem">
+        </ul>
+    </nav>
+</div>
+
+<main>
+    <nav class="breadcrumb">
+        <p href="#">Categories: </p>
+        <p id="productCategories123"></p>
+    </nav>
+
+    <section class="product-details">
+        <div class="product-image">
+            <img id="productDetailsProductImage" src="" alt="Product Image">
+        </div>
+        <div class="product-info">
+            <div class="product-header">
+                <h1 id="product-name">Loading...</h1>
+                <button class="bookmark-button" id="bookmark-button" ></button>
+
+            </div>
+            <p class="price" id="product-price">Loading...</p>
+            <p class="description" id="product-description">Loading...</p>
+            <div class="reviews">
+                <div class="product-rating">
+                    <img src="/stars/star.png" alt="Rating" class="rating-star">
+                    <span id="product-rating"></span>
+                </div>
+                <a id="review-count" class="review-count">Loading...</a>
+            </div>
+            <div class="qa">
+                <a id="qa">Q/A</a>
+            </div>
+        </div>
+    </section>
+    <button class="purchase-button small-button" id="purchase-button">Purchase Product</button>
+</main>
+
+<!-- Footer -->
+<footer class="bg-primary text-white py-4 mt-8">
+    <div class="container mx-auto flex justify-between">
+        <div>
+            <a href="/html/UnregUser/aboutUs.html" class="block">About us</a>
+        </div>
+        <div>
+            <a href="/html/UnregUser/forum.html" class="block">Forum</a>
+        </div>
+
+    </div>
+</footer>
+<script src="../../js/UnregUser/productDetails.js"></script>
+</body>
+</html>

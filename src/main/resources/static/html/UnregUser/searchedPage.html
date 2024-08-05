@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopSmart - Search Results</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/UnregUser/searchedPage.css">
+</head>
+<body class="bg-gray-100">
+
+<div class="menu_icon_box">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+</div>
+
+<!-- Header -->
+<header class="bg-primary py-4">
+    <div class="container mx-auto flex justify-between items-center">
+        <div class="flex items-center space-x-4">
+            <input type="text" id="searchInputOfSearch" placeholder="Search..." class="px-4 py-2 rounded bg-secondary text-black">
+            <button id="searchButtonOfSearch"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+            </svg></button>
+        </div>
+        <a href="/html/UnregUser/homePage.html" class="image-link">
+            <img  src="/photos/shopsmartwhite.png" alt="Beyaz logo" width="160" height="50">
+        </a>
+
+        <div class="flex items-center space-x-4 flex-lg-grow-1 "> <!-- Username or Sign in/Register -->
+
+            <a href="/html/UnregUser/forum.html">Forum</a>
+
+            <a id="wishListIdOfOfTemp" href="/html/User/wishlist.html">Wishlist</a>
+                <div id="user-section" class="uname">
+                    <!-- Username or Sign in/Register -->
+                </div>
+
+        </div>
+    </div>
+</header>
+
+<div class="sidebar" id="sidebar">
+    <nav>
+        <ul id="categoriesOfSystem">
+        </ul>
+    </nav>
+</div>
+
+<!-- Main Content -->
+<main class="container mx-auto mt-8">
+    <section id="search-results-section" class="container mx-auto py-8">
+        <div class="flex justify-between items-center mb-4">
+            <h2 class="text-xl font-semibold" id="searchResultsDisplayer">Search Results</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-4">
+            <!-- Product Cards -->
+        </div>
+        <div class="flex justify-center mt-4 space-x-2">
+            <!-- Pagination Controls -->
+        </div>
+    </section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary text-white py-4 mt-8">
+    <div class="container mx-auto flex justify-between">
+        <div>
+            <a href="/html/UnregUser/aboutUs.html" class="block">About us</a>
+        </div>
+        <div>
+            <a href="/html/UnregUser/forum.html" class="block">Forum</a>
+        </div>
+
+    </div>
+</footer>
+
+<script src="/js/UnregUser/searchedPage.js"></script>
+</body>
+</html>

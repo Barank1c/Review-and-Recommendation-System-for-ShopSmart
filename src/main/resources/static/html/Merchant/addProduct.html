@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product</title>
+    <link rel="stylesheet" href="/css/Merchant/addProduct.css">
+</head>
+<body>
+
+<header class="header">
+    <img src="/photos/SS%20RRSS-Photoroom.png-Photoroom.png" alt="logo" width="160" height="50">
+</header>
+<main class="main-content">
+    <h1>Add Product</h1>
+    <form id="addProductForm">
+        <div class="form-group">
+            <label for="productName">Product Name:</label>
+            <input type="text" id="productName" name="productName">
+        </div>
+
+        <div class="form-group">
+            <label for="description">Description:</label>
+            <textarea id="description" name="description"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="price">Price:</label>
+            <input type="number" id="price" name="price">
+        </div>
+
+        <div class="form-group">
+            <label for="productImage">Product Image:</label>
+            <input type="file" id="productImage" name="productImage">
+        </div>
+
+
+        <div id="categoryContainer"></div>
+
+        <div class="form-group action-buttons" style="display: flex; justify-content: space-between;">
+            <button type="submit">Add Product</button>
+            <button type="button" class="returnbut">
+                <a href="productsOfMerchant.html">Go to Products Page</a>
+            </button>
+        </div>
+    </form>
+</main>
+<script src="/js/Merchant/addProduct.js"></script>
+</body>
+</html>

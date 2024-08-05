@@ -1,0 +1,225 @@
+:root {
+    --primary-color: #331832; /* Dark purple */
+    --secondary-color: #EDE7F6; /* Light purple */
+    --accent-color: #D32F2F; /* Red */
+    --text-color: #212121; /* Dark grey */
+    --light-blue: #E3F2FD; /* Light blue for topics */
+    --light-green: #E8F5E9; /* Light green for blogs */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.bg-primary {
+    background-color: var(--primary-color);
+}
+
+.bg-secondary {
+    background-color: var(--secondary-color);
+}
+
+.text-primary {
+    color: var(--primary-color);
+}
+
+.text-secondary {
+    color: var(--secondary-color);
+}
+
+.text-accent {
+    color: var(--accent-color);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    position: relative;
+}
+
+header .logo {
+    position: absolute;
+    left: 20px;
+}
+
+header .forum-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    flex: 1;
+}
+
+header img {
+    width: 150px;
+}
+
+.forum-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    flex: 1;
+    margin-left: 20px;
+}
+
+#home-btn {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#home-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.topics-section,
+.blogs-section {
+    margin-bottom: 40px;
+}
+
+.topic-item {
+    background-color: var(--light-blue);
+    color: var(--text-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topic-item:hover {
+    background-color: #BBDEFB; /* Darker shade of light blue */
+}
+
+.blog-item {
+    background-color: var(--light-green);
+    color: var(--text-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blog-item:hover {
+    background-color: #C8E6C9; /* Darker shade of light green */
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-edit {
+    background-color: cornflowerblue;
+    color: var(--secondary-color);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-edit svg {
+    fill: var(--secondary-color);
+}
+
+.btn-edit:hover {
+    background-color: dodgerblue;
+    color: var(--secondary-color);
+}
+
+.btn-edit:hover svg {
+    fill: var(--secondary-color);
+}
+
+.btn-delete {
+    background-color: indianred;
+    color: var(--secondary-color);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-delete svg {
+    fill: var(--secondary-color);
+}
+
+.btn-delete:hover {
+    background-color: darkred;
+    color: var(--secondary-color);
+}
+
+.btn-delete:hover svg {
+    fill: var(--secondary-color);
+}
+
+button {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+}
+
+.btn-createtopic,
+.btn-createblog {
+    background-color: #EDE7F6;
+    color: #212529;
+}
+
+.pagination button {
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 5px;
+}
+
+.pagination button.active {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.pagination button:hover {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+}
+
+#edit-topic-blog-box {
+    display: none;
+}
+
+#edit-topic-blog-box.active {
+    display: flex;
+}
+
+#edit-topic-blog-box,
+#create-topic-box {
+    display: none;
+}
+
+#edit-topic-blog-box.active,
+#create-topic-box.active {
+    display: flex;
+}
+

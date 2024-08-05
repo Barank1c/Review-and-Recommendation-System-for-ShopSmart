@@ -1,0 +1,542 @@
+/* Existing CSS styles from profile.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f7f9;
+}
+
+.header {
+    background-color: #331832;
+    color: white;
+    padding: 20px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.proftomain{
+     padding-right: 45%;
+
+ }
+
+.pagination-button {
+    margin: 0 5px; /* Adjust the margin to add space between buttons */
+    padding: 5px 10px;
+    background-color: #5D3FD3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pagination-button:hover {
+    background-color: #4c32a8;
+}
+
+.pagination-button.active {
+    background-color: #ffc107; /* Different color for the active page */
+    font-weight: bold;
+}
+
+.nav-link.active-item {
+    background-color: #4c32a8;
+    font-weight: bold;
+    color: white;
+}
+.user-name{
+    margin-left:80%;
+    color: #D2C3BE;
+}
+.bi-box-arrow-left{
+    color: #D2C3BE;
+}
+.logout{
+    background-color: transparent;
+}
+.logout:hover{
+    background-color: transparent;
+}
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.user-name {
+    font-size: 18px;
+}
+
+.logo {
+    font-size: 32px;
+    margin: 0;
+}
+
+.sidebar {
+    height: 150vh;
+    padding-top: 20px;
+    background-color: #685967;
+    color: white;
+}
+
+.sidebar .nav-link {
+    color: white;
+    font-size: 18px;
+}
+
+.sidebar .nav-link.active {
+    background-color: #685967;
+}
+
+.sidebar .nav-link:hover {
+    background-color: #5c4a6e;
+}
+
+.sidebar .nav-link.text-danger {
+    color: #e04d4a;
+}
+
+.main-content {
+    width: 60%;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+button,
+.button-link {
+    background-color: #5D3FD3;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+button:hover,
+.button-link:hover {
+    background-color: #4c32a8;
+}
+
+.button-link {
+    border-radius: 4px;
+}
+
+.form-group.action-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.returnbut a {
+    color: white;
+    text-decoration: none;
+}
+
+.returnbut:hover, button:hover {
+    background-color: darkmagenta;
+}
+
+.returnbut {
+    position: relative;
+    z-index: 1;
+}
+
+a {
+    text-decoration: none;
+    color: #5D3FD3;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* New CSS styles extracted from profile.js */
+
+.ticket-management-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.ticket-action-button {
+    background-color: #3b3b3b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.ticket-header h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.ticket-item, .new-ticket-item {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.ticket-item:hover, .new-ticket-item:hover {
+    background-color: #d0d0d0;
+}
+
+.ticket-item h3, .new-ticket-item span {
+    margin: 0;
+    font-size: 18px;
+}
+
+.ticket-item p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.ticket-status {
+    font-size: 12px;
+    color: #999;
+}
+
+.add-icon {
+    font-size: 24px;
+    color: #3b3b3b;
+    margin-right: 10px;
+}
+
+#triggerPopupButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.support-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.support-button {
+    background-color: #331832;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.ticket-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.ticket, .new-ticket {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.ticket:hover, .new-ticket:hover {
+    background-color: #e0e0e0;
+}
+
+.ticket h3, .new-ticket span {
+    margin: 0;
+    font-size: 18px;
+}
+
+.ticket p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.plus-icon {
+    font-size: 24px;
+    color: #331832;
+    margin-right: 10px;
+}
+
+#openPopupButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.popup-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+}
+
+.close-button, .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button:hover, .close-button:focus,
+.close-btn:hover, .close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.promotion-management-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.promotion-item {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.promotion-item:hover {
+    background-color: #d0d0d0;
+}
+
+.promotion-item h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.promotion-item p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.promotion-item .btn-group {
+    display: flex;
+    gap: 10px;
+}
+
+#triggerPopupButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.ticket-management-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.ticket-action-button {
+    background-color: #3b3b3b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.ticket-header h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.ticket-item, .new-ticket-item {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.ticket-item:hover, .new-ticket-item:hover {
+    background-color: #d0d0d0;
+}
+
+.ticket-item h3, .new-ticket-item span {
+    margin: 0;
+    font-size: 18px;
+}
+
+.ticket-item p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.ticket-status {
+    font-size: 12px;
+    color: #999;
+}
+
+.add-icon {
+    font-size: 24px;
+    color: #3b3b3b;
+    margin-right: 10px;
+}
+
+#triggerPopupButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.product-management-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.product-item {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-item:hover {
+    background-color: #d0d0d0;
+}
+
+.product-item h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.product-item p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+}

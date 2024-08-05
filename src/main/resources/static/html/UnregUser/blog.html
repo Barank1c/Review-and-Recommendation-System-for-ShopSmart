@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User's Blog</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/UnregUser/blog.css">
+</head>
+<body class="bg-gray-150">
+<!-- Header -->
+<header class="header">
+  <img src="/photos/SS%20RRSS-Photoroom.png-Photoroom.png" alt="logo" class="logo" width="160" height="50">
+  <h1 class="forum-title">User's Blog</h1>
+  <button id="home-btn" class="bg-primary py-2 px-4 rounded">Forum</button>
+</header>
+
+<!-- Main Content -->
+<main class="main-content mt-8">
+  <div class="container mx-auto px-4">
+    <div class="flex justify-center mb-4">
+      <h2 class="text-xl font-semibold bg-secondary p-4 rounded" id="blog-title">Blog Topic Title</h2>
+    </div>
+    <div id="blog-content-box" class="bg-secondary p-6 rounded-lg mb-4">
+      <p id="blog-content">This is the content of the blog...</p>
+    </div>
+    <div class="flex justify-end gap-4">
+      <button id="edit-btn" class="btn-edit">Edit</button>
+      <button id="delete-btn" class="btn-delete">Delete</button>
+    </div>
+  </div>
+</main>
+
+<!-- Edit Blog Box -->
+<div id="edit-blog-box" class="hidden fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-50">
+  <div class="bg-white p-6 rounded shadow-md w-full max-w-2xl">
+    <h3 class="text-lg font-semibold mb-4">Edit Blog</h3>
+    <textarea id="edit-blog-textarea" class="w-full p-4 border rounded mb-4 h-64"></textarea>
+    <div class="flex justify-end gap-4">
+      <button id="cancel-edit-btn" class="bg-gray-500 text-white py-2 px-4 rounded">Cancel</button>
+      <button id="save-edit-btn" class="bg-primary text-white py-2 px-4 rounded">Save</button>
+    </div>
+  </div>
+</div>
+
+<script src="/js/UnregUser/blog.js"></script>
+</body>
+</html>

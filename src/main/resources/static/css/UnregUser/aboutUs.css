@@ -1,0 +1,224 @@
+.righteous-regular {
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+:root {
+    --primary-color: #331832;
+    --secondary-color: #EDE7F6;
+    --accent-color: #D2C3BE;
+    --text-color: #212121;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+
+}
+
+.bg-primary {
+    background-color: var(--primary-color);
+    color:var(--accent-color);
+}
+
+.bg-secondary {
+    background-color: var(--secondary-color);
+}
+.uname{
+    font-family: Righteous,cursive;
+    /*user icon eklenicek */
+}
+.text-primary {
+    color: var(--primary-color);
+}
+
+.text-secondary {
+    color: var(--secondary-color);
+}
+
+.text-accent {
+    color: var(--accent-color);
+}
+
+.text-default {
+    color: var(--text-color);
+}
+
+.header,
+.footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.header a,
+.footer a {
+    color: var(--secondary-color);
+}
+
+.header a:hover,
+.footer a:hover {
+    color: var(--accent-color);
+}
+
+.bi-box-arrow-right{
+    color: var(--secondary-color);
+}
+
+.pagination button {
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 5px;
+}
+
+.pagination button.active {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.pagination button:hover {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+}
+
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-card h3 {
+    font-size: 1.25rem;
+    margin: 0.5rem 0;
+}
+
+.product-card p {
+    margin: 0.25rem 0;
+}
+
+.product-card .price {
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+.product-card .reviews {
+    color: var(--text-color);
+}
+
+.sidebar {
+    width: 13%;
+    height: 100vh;
+    background-color: #685967;
+    float: left;
+    position: relative;
+    text-align: left;
+    z-index: 1;
+    opacity: 0;
+    left: -500px;
+    pointer-events: none;
+    transition: 0.3s;
+    font-family: "Poppins", sans-serif;
+}
+.active_sidebar{
+    opacity: 1;
+    left: 0px;
+    pointer-events: fill;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 50px;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    background-color: #6A5ACD;
+}
+
+.menu_icon_box{
+    z-index: 3;
+    width: fit-content;
+    height: auto;
+    margin: 8px;
+    position: absolute;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.line1 , .line2 , .line3{
+    width: 40px;
+    height: 4px;
+    margin: 10px 10px;
+    background-color: #fff;
+    border-radius: 50px;
+    transition: 0.2s;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#about-us {
+    padding: 3rem 0;
+}
+
+.about-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.about-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.about-card h3 {
+    font-size: 1.25rem;
+    margin: 1rem 0 0.5rem;
+}
+
+.about-card p {
+    margin: 0.25rem 0;
+    color: var(--text-color);
+}

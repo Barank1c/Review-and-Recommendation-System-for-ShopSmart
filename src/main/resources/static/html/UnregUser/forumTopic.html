@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopSmart - Forum Topic</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/unregUser/forumTopic.css">
+</head>
+<body class="bg-gray-100">
+<!-- Header -->
+<header class="bg-primary py-4">
+    <div class="container mx-auto flex justify-between items-center">
+
+        <a href="/html/UnregUser/homePage.html" class="image-link">
+        <img src="/photos/SS%20RRSS-Photoroom.png-Photoroom.png" alt="ShopSmart logo" width="160" height="50">
+        </a>
+        <h1 class="text-3xl font-semibold text-center text-black">Forum</h1>
+        <a href="/html/UnregUser/forum.html">
+            <button id="home-btn" class="bg-primary py-2 px-4 rounded">Forum</button>
+        </a>
+    </div>
+</header>
+
+<!-- Main Content -->
+<main class="main-content mt-8">
+    <div class="container mx-auto px-4">
+        <div id="topic-details" class="mb-4 p-4 bg-white rounded shadow">
+            <!-- Topic Details -->
+        </div>
+        <div class="flex justify-center mb-4 pagination">
+            <!-- Pagination Controls -->
+        </div>
+        <div id="comments-section" class="space-y-4">
+            <!-- Comment Cards -->
+        </div>
+        <div class="flex justify-center mt-4">
+            <textarea id="comment-textarea" class="w-full p-4 bg-secondary rounded-lg" placeholder="Add comment"></textarea>
+        </div>
+    </div>
+</main>
+
+<!-- Modal for editing comments -->
+<div id="edit-comment-modal" class="hidden fixed inset-0 bg-gray-600 bg-opacity-50 flex justify-center items-center">
+    <div class="bg-white p-4 rounded shadow-lg">
+        <h2 class="text-xl font-semibold mb-4">Edit Comment</h2>
+        <textarea id="edit-comment-textarea" class="w-full p-2 border rounded mb-4"></textarea>
+        <div class="flex justify-end">
+            <button id="cancel-edit-btn" class="px-4 py-2 bg-gray-500 text-white rounded mr-2">Cancel</button>
+            <button id="save-edit-btn" class="px-4 py-2 bg-primary text-white rounded">Save</button>
+        </div>
+    </div>
+</div>
+
+<script src="/js/unregUser/forumTopic.js"></script>
+</body>
+</html>
